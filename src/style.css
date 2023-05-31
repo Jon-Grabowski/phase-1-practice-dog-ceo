@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color:deeppink;
+    text-align: center;
+}
+
+label {
+    color:floralwhite;
+    font-size: 20px;
+}
+
+.list-of-dogs {
+    color: floralwhite;
+    font-size: 16px;
+}
+
+img {
+    height: 300px;
+    align-items:flex-end;
+}
