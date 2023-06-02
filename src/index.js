@@ -12,6 +12,7 @@ fetch(imgUrl)
     .then(dogPics => {
         dogsInKennel(dogPics);
     });
+
 fetch(breedUrl)
     .then(res => res.json())
     .then(breeds => {
@@ -49,5 +50,23 @@ function renderBreedList(dog) {
     const listItem = document.createElement('li');
     listItem.innerText = dog;
     listItem.className = 'list-of-dogs'
+    listItem.addEventListener('click', (e) => {
+        e.target.style = 'color: deeppink;'
+    })
     dogListUL.append(listItem);
-}
+};
+
+//Drop Down Menu
+const dropMenu = document.getElementById('breed-dropdown');
+dropMenu.addEventListener('change', (e) => {
+    const letter = e.target.value;
+    if (letter === 'a'){
+        console.log('this is a')
+    }else if (letter === 'b') {
+        console.log('this is b')
+    }else if (letter === 'c') {
+        console.log('this is c')
+    }else if (letter === 'd') {
+        console.log('this is d')
+    };
+});
